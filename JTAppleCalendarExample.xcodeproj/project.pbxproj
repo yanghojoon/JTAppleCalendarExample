@@ -12,6 +12,7 @@
 		DE8F05512A42C6450038C255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F05502A42C6450038C255 /* ViewController.swift */; };
 		DE8F05562A42C6460038C255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8F05552A42C6460038C255 /* Assets.xcassets */; };
 		DE8F05592A42C6460038C255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8F05572A42C6460038C255 /* LaunchScreen.storyboard */; };
+		DE8F05622A42CDDC0038C255 /* JTAppleCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DE8F05612A42CDDC0038C255 /* JTAppleCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8F05622A42CDDC0038C255 /* JTAppleCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = JTAppleCalendarExample;
+			packageProductDependencies = (
+				DE8F05612A42CDDC0038C255 /* JTAppleCalendar */,
+			);
 			productName = JTAppleCalendarExample;
 			productReference = DE8F05492A42C6450038C255 /* JTAppleCalendarExample.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = DE8F05402A42C6450038C255;
+			packageReferences = (
+				DE8F05602A42CDDC0038C255 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */,
+			);
 			productRefGroup = DE8F054A2A42C6450038C255 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE8F05602A42CDDC0038C255 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/patchthecode/JTAppleCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE8F05612A42CDDC0038C255 /* JTAppleCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE8F05602A42CDDC0038C255 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */;
+			productName = JTAppleCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE8F05412A42C6450038C255 /* Project object */;
 }
