@@ -51,5 +51,16 @@ final class ViewController: UIViewController {
             $0.height.equalTo(50)
         }
     }
+
+    private func setAttributes() {
+        basicCalendarButton.addTarget(self, action: #selector(tapBasicCalendarButton), for: .touchUpInside)
+    }
+
+    @objc
+    private func tapBasicCalendarButton() {
+        let basicCalendarViewController = BasicCalendarViewController()
+
+        navigationController?.pushViewController(basicCalendarViewController, animated: true)
+    }
 }
 
