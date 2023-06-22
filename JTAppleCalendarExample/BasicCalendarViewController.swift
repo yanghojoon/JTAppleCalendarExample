@@ -73,13 +73,18 @@ final class BasicCalendarViewController: UIViewController {
 
         calendarView.calendarDataSource = self
         calendarView.calendarDelegate = self
+
+        calendarView.scrollToDate(Date(), animateScroll: false)
     }
 }
 
 extension BasicCalendarViewController: JTACMonthViewDataSource, JTACMonthViewDelegate {
-    func calendar(_ calendar: JTAppleCalendar.JTACMonthView, willDisplay cell: JTAppleCalendar.JTACDayCell, forItemAt date: Date, cellState: JTAppleCalendar.CellState, indexPath: IndexPath) {
-
-    }
+    func calendar(
+        _ calendar: JTAppleCalendar.JTACMonthView,
+        willDisplay cell: JTAppleCalendar.JTACDayCell,
+        forItemAt date: Date,
+        cellState: JTAppleCalendar.CellState, indexPath: IndexPath
+    ) { }
 
     func configureCalendar(
         _ calendar: JTAppleCalendar.JTACMonthView
@@ -113,9 +118,11 @@ extension BasicCalendarViewController: JTACMonthViewDataSource, JTACMonthViewDel
             for: indexPath
         ) as! CalendarCell
 
-        if cellState.date == Date() {
+        if cellState.date.formatted(dateFormat: "yyyy MM dd") == Date().formatted(dateFormat: "yyyy MM dd") {
             cell.layer.borderColor = UIColor.systemOrange.cgColor
             cell.layer.borderWidth = 1
+        } else {
+            cell.layer.borderWidth = 0
         }
 
         cell.configure(state: cellState)
