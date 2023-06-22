@@ -39,6 +39,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         render()
+        setAttributes()
     }
 
     private func render() {

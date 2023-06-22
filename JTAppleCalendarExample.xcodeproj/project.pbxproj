@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE6D62DF2A43E66E00E1147C /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DE6D62DE2A43E66E00E1147C /* Then */; };
+		DE6D62E22A43EFCC00E1147C /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6D62E12A43EFCC00E1147C /* Date+.swift */; };
+		DE6D62E42A43F0D300E1147C /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6D62E32A43F0D300E1147C /* CalendarCell.swift */; };
 		DE8F054D2A42C6450038C255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F054C2A42C6450038C255 /* AppDelegate.swift */; };
 		DE8F054F2A42C6450038C255 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F054E2A42C6450038C255 /* SceneDelegate.swift */; };
 		DE8F05512A42C6450038C255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F05502A42C6450038C255 /* ViewController.swift */; };
@@ -18,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE6D62E12A43EFCC00E1147C /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		DE6D62E32A43F0D300E1147C /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		DE8F05492A42C6450038C255 /* JTAppleCalendarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTAppleCalendarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8F054C2A42C6450038C255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE8F054E2A42C6450038C255 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8F05622A42CDDC0038C255 /* JTAppleCalendar in Frameworks */,
+				DE6D62DF2A43E66E00E1147C /* Then in Frameworks */,
 				DE8F05652A42D2FF0038C255 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE6D62E02A43EFB900E1147C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE6D62E12A43EFCC00E1147C /* Date+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		DE8F05402A42C6450038C255 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +74,12 @@
 		DE8F054B2A42C6450038C255 /* JTAppleCalendarExample */ = {
 			isa = PBXGroup;
 			children = (
+				DE6D62E02A43EFB900E1147C /* Extension */,
 				DE8F054C2A42C6450038C255 /* AppDelegate.swift */,
 				DE8F054E2A42C6450038C255 /* SceneDelegate.swift */,
 				DE8F05502A42C6450038C255 /* ViewController.swift */,
 				DED2CC2E2A43E49F00DED86C /* BasicCalendarViewController.swift */,
+				DE6D62E32A43F0D300E1147C /* CalendarCell.swift */,
 				DE8F05552A42C6460038C255 /* Assets.xcassets */,
 				DE8F05572A42C6460038C255 /* LaunchScreen.storyboard */,
 				DE8F055A2A42C6460038C255 /* Info.plist */,
@@ -90,6 +106,7 @@
 			packageProductDependencies = (
 				DE8F05612A42CDDC0038C255 /* JTAppleCalendar */,
 				DE8F05642A42D2FF0038C255 /* SnapKit */,
+				DE6D62DE2A43E66E00E1147C /* Then */,
 			);
 			productName = JTAppleCalendarExample;
 			productReference = DE8F05492A42C6450038C255 /* JTAppleCalendarExample.app */;
@@ -122,6 +139,7 @@
 			packageReferences = (
 				DE8F05602A42CDDC0038C255 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */,
 				DE8F05632A42D2FF0038C255 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DE6D62DD2A43E66E00E1147C /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = DE8F054A2A42C6450038C255 /* Products */;
 			projectDirPath = "";
@@ -150,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8F05512A42C6450038C255 /* ViewController.swift in Sources */,
+				DE6D62E42A43F0D300E1147C /* CalendarCell.swift in Sources */,
 				DED2CC2F2A43E49F00DED86C /* BasicCalendarViewController.swift in Sources */,
+				DE6D62E22A43EFCC00E1147C /* Date+.swift in Sources */,
 				DE8F054D2A42C6450038C255 /* AppDelegate.swift in Sources */,
 				DE8F054F2A42C6450038C255 /* SceneDelegate.swift in Sources */,
 			);
@@ -366,6 +386,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DE6D62DD2A43E66E00E1147C /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		DE8F05602A42CDDC0038C255 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/patchthecode/JTAppleCalendar.git";
@@ -385,6 +413,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE6D62DE2A43E66E00E1147C /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6D62DD2A43E66E00E1147C /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		DE8F05612A42CDDC0038C255 /* JTAppleCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DE8F05602A42CDDC0038C255 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */;
