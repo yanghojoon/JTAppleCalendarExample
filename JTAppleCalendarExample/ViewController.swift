@@ -104,5 +104,9 @@ final class ViewController: UIViewController {
         
         navigationController?.pushViewController(practiceViewController, animated: true)
     }
+
+    func add(_ x: Int, _ y: Int) -> Int {
+        return x + y
+    }
 }
 
