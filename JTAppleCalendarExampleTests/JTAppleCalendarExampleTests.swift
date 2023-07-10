@@ -23,6 +23,6 @@ final class JTAppleCalendarExampleTests: XCTestCase {
     func testExample() throws {
         let result = sut.add(1, 1)
 
-        XCTAssertEqual(result, 3)
+        XCTAssertEqual(result, 2)
     }
 }
